@@ -5,6 +5,7 @@
     sum( : "Suma números".
     sub( : "Resta números".
     print( : "Imprime cualquier cosa en pantalla".
+    mul( : "Multiplica números".
     
 >>Ventajas
   
