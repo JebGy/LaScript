@@ -6,7 +6,19 @@
     sub( : "Resta números".
     print( : "Imprime cualquier cosa en pantalla".
     mul( : "Multiplica números".
-    
+
+>>Importante
+
+	* RECUERDE CERRAR EL MÉTODO.
+	* EJEMPLO:
+		init;
+
+		sum(
+		5+9
+		)
+
+		end;
+
 >>Ventajas
   
   -Fácil de usar.
