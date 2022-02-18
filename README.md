@@ -1,4 +1,5 @@
 # LaScript
-Lenguaje de Programación
+Lenguaje de Programación interpretado por Java.
 
-Solo se puede editar mediante IntelliJ IDEA
+# ¿Cómo colaborar?
+Puedes colaborar ingresando al grupo de discord: https://discord.gg/y7bsqvdJtZ
