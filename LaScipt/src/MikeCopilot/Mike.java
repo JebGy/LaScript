@@ -9,18 +9,34 @@ public class Mike {
     public static ArrayList<String> LineaCode = new ArrayList<>();
     static int i = 0;
     public static String path = "";
+    private static boolean isRunning=true;
 
-    public static void main(String[] args) {
-        System.out.print("LaScript>> ");
-        Scanner s = new Scanner(System.in);
-        path = s.nextLine();
-        Reader.setPath(path);
-        try {
-            Reader.leer();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        run();
+    public static void main(String [] args) {
+        do{
+            System.out.print("\nLaScript>> ");
+            Scanner s = new Scanner(System.in);
+            path = s.nextLine();
+            Reader.setPath(path);
+            try {
+                Reader.leer();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            run();
+            isRunning=true;
+            String cn="";
+            System.out.print("\n\nExecute Finished | Errors = 0 | Press 'y' to continue | Press any key to exit >> ");
+            cn=s.nextLine();
+            switch (cn){
+                case "y":
+                    String a[]= new String[2];
+                    main(a);
+                    break;
+                default:
+                    System.exit(0);
+                    break;
+            }
+        }while(isRunning);
     }
 
 
@@ -82,9 +98,13 @@ public class Mike {
                         case ")":
                             System.out.print("- - - endOfLine - - -\n");
                             break;
+                        case "s(":
+                            System.out.println("- - - initLine - - -");
+
+
                         case "end;":
                             System.out.println("\n>>End");
-                            System.exit(0);
+                            LineaCode.clear();
                             break;
                     }
                 }

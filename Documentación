@@ -11,6 +11,7 @@
 
 	* RECUERDE CERRAR EL MÉTODO.
 	* EJEMPLO:
+
 		init;
 
 		sum(
@@ -19,9 +20,12 @@
 
 		end;
 
+	*LOS ARCHIVOS LASCRIPT LLEVAN LA EXTENCIÓN (.las).
+
 >>Ventajas
   
   -Fácil de usar.
+  -No necesitas un IDE para usarlo, solo basta el bloc de notas.
 
 >>Desventajas
 

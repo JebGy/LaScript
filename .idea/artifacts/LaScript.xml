@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="LaScript:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/LaScript_jar</output-path>
+  <artifact type="jar" build-on-make="true" name="LaScript">
+    <output-path>$PROJECT_DIR$/out/artifacts/LaScript</output-path>
     <root id="archive" name="LaScript.jar">
       <element id="module-output" name="LaScript" />
     </root>
