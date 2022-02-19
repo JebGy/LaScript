@@ -5,26 +5,30 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
+import static MikeCopilot.Reader.*;
+
 public class Mike {
     public static ArrayList<String> LineaCode = new ArrayList<>();
     static int i = 0;
     public static String path = "";
     private static boolean isRunning=true;
+    Reader r = new Reader();
 
     public static void main(String [] args) {
         do{
             System.out.print("\nLaScript>> ");
             Scanner s = new Scanner(System.in);
             path = s.nextLine();
-            Reader.setPath(path);
+            setPath(path);
             try {
-                Reader.leer();
+                leer();
             } catch (IOException e) {
                 e.printStackTrace();
             }
             run();
             isRunning=true;
             String cn="";
+            LineaCode.clear();
             System.out.print("\n\nExecute Finished | Errors = 0 | Press 'y' to continue | Press any key to exit >> ");
             cn=s.nextLine();
             switch (cn){
@@ -42,14 +46,13 @@ public class Mike {
 
     public static void run() {
         try {
+
             for (i = 0; i < LineaCode.size(); i++) {
-                if (LineaCode.get(0).toString().equals("init;") && LineaCode.get(LineaCode.size() - 1).toString().equals("end;")) {
+                if (LineaCode.get(0).toString().equals("init "+fileName+";") && LineaCode.get(LineaCode.size() - 1).toString().equals("end;")) {
+                    //System.out.println("\n>>Run\n");
                     switch (LineaCode.get(i)) {
-                        case "init;":
-                            System.out.println("\n>>Run\n");
-                            break;
                         case "sum(":
-                            System.out.println("- - - initLine - - -");
+
                             int sum = 0;
                             String data = LineaCode.get(i + 1);
 
@@ -58,11 +61,11 @@ public class Mike {
                             while (st.hasMoreTokens()) {
                                 sum += Integer.parseInt(st.nextToken());
                             }
-                            System.out.println(sum);
+                            System.out.println("\n"+sum);
 
                             break;
                         case "sub(":
-                            System.out.println("- - - initLine - - -");
+
                             int sub = 0;
                             String dat = LineaCode.get(i + 1);
 
@@ -78,14 +81,14 @@ public class Mike {
                                     sub -= Integer.parseInt(sts.nextToken());
                                 }
                             }
-                            System.out.println(sub);
+                            System.out.println("\n"+sub);
                             break;
                         case "print(":
-                            System.out.println("- - - initLine - - -");
+
                             System.out.println(LineaCode.get(i + 1).toString().replace('"', ' '));
                             break;
                         case "mul(":
-                            System.out.println("- - - initLine - - -");
+
                             String dt=LineaCode.get(i+1);
                             int mul=1;
                             StringTokenizer stm= new StringTokenizer(dt,"*");
@@ -93,18 +96,18 @@ public class Mike {
                             while(stm.hasMoreTokens()){
                                 mul*=Integer.parseInt(stm.nextToken());
                             }
-                            System.out.println(mul);
+                            System.out.println("\n"+mul);
                             break;
                         case ")":
-                            System.out.print("- - - endOfLine - - -\n");
+
                             break;
                         case "s(":
-                            System.out.println("- - - initLine - - -");
 
-
-                        case "end;":
-                            System.out.println("\n>>End");
-                            LineaCode.clear();
+                            break;
+                        case ">>":
+                            i++;
+                            break;
+                        case "*":
                             break;
                     }
                 }

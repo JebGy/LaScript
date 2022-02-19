@@ -1,7 +1,8 @@
 # Documentación
 
->>Métodos
-    
+>>Métodos y Más
+
+    Comentario : >> Comentario
     sum( : "Suma números".
     sub( : "Resta números".
     print( : "Imprime cualquier cosa en pantalla".
