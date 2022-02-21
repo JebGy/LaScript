@@ -2,11 +2,15 @@
 
 >>Métodos y Más
 
-    Comentario : >> Comentario
-    sum( : "Suma números".
-    sub( : "Resta números".
-    print( : "Imprime cualquier cosa en pantalla".
-    mul( : "Multiplica números".
+    sum( : "Suma números (no admite variables)".
+    sub( : "Resta números (no admite variables)".
+    print( : "Imprime cualquier cosa en pantalla (no admite variables)".
+    mul( : "Multiplica números (no admite variables)".
+    mulVarInt( : "Multiplica valores enteros almacenados en variables".
+    sumVarInt( : "Suma valores enteros almacenados en variables".
+    div( : "Divide valores double (no admite variables)".
+    >> : "La siguiente linea se realiza la declaración de la variable entera (NO LLEVA ';' )".
+    << : "La siguiente linea se realiza la declaración de la variable String (NO LLEVA ';' )".
 
 >>Importante
 
