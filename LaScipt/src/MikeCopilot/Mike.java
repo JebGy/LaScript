@@ -1,6 +1,7 @@
 package MikeCopilot;
 
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -90,9 +91,9 @@ public class Mike {
                         case "print(":
                             String va[] = new String[1];
                             for (int j = 0; j < va.length; j++) {
-                                va[0]=LineaCode.get(i+1);
+                                va[0] = LineaCode.get(i + 1);
                                 if (variablesString.containsKey(va[j])) {
-                                    System.out.println("\n"+variablesString.get(va[j]));
+                                    System.out.println("\n" + variablesString.get(va[j]));
                                     break;
                                 } else {
                                     System.out.println("\n" + LineaCode.get(i + 1).toString().replace('"', ' '));
