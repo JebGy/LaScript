@@ -4,7 +4,7 @@ Lenguaje de Programación interpretado por Java.
 # ¿Cómo colaborar?
 Puedes colaborar ingresando al grupo de discord: https://discord.gg/y7bsqvdJtZ
 
-# ¿Cómo iniciar el intérprete?
+# ¿Cómo ejecutar un archivo LaScript?
 
 1.- Abre la carpeta "out".
 
@@ -28,3 +28,6 @@ Puedes colaborar ingresando al grupo de discord: https://discord.gg/y7bsqvdJtZ
 ![image](https://user-images.githubusercontent.com/75335038/155569633-88816658-38d4-4bfc-8e26-adcedeffb542.png)
 ![image](https://user-images.githubusercontent.com/75335038/155569939-a5f32d13-8732-4aaa-afaa-2b387436947e.png)
 
+# ¡Bonus!
+
+Para iniciar mas rápido, y no entrar en las carpetas, usted debe de tener el .bat y el LaScript.jar en un mismo lugar.
