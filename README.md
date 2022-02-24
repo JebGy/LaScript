@@ -34,4 +34,4 @@ comiencen con un lenguaje sencillo y facil de entender.
 
 # ¡Bonus!
 
-Para iniciar mas rápido, y no entrar en las carpetas, usted debe de tener el .bat y el LaScript.jar en un mismo lugar.
+Para iniciar más rápido, y no entrar en las carpetas, usted debe de tener el .bat y el LaScript.jar en un mismo lugar.
