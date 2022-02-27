@@ -9,8 +9,9 @@
     mulVarInt( : "Multiplica valores enteros almacenados en variables".
     sumVarInt( : "Suma valores enteros almacenados en variables".
     div( : "Divide valores double (no admite variables)".
-    >> : "La siguiente linea se realiza la declaración de la variable entera (NO LLEVA ';' )".
+    >> : "La siguiente linea se realiza la declaración de la variable Integer (NO LLEVA ';' )".
     << : "La siguiente linea se realiza la declaración de la variable String (NO LLEVA ';' )".
+    > : "La siguiente linea se realiza la declaración de la variable Double (NO LLEVA ';')"
 
 >>Importante
 

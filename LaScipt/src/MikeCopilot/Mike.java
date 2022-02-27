@@ -23,6 +23,7 @@ public class Mike {
     public static ArrayList<String> LineaCode = new ArrayList<>();
     public static HashMap<String, Integer> variablesEnteras = new HashMap<>();
     public static HashMap<String, String> variablesString = new HashMap<>();
+    public static HashMap<String, Double> variablesDouble = new HashMap<>();
     static int i = 0;
     public static String path = "";
     private static boolean isRunning = true;
@@ -119,7 +120,7 @@ public class Mike {
                             while (stm.hasMoreTokens()) {
                                 mul *= Integer.parseInt(stm.nextToken());
                             }
-                            System.out.println(ANSI_RED + "\n"+mul + ANSI_RESET);
+                            System.out.println(ANSI_RED + "\n" + mul + ANSI_RESET);
                             //System.out.println("\n" + mul);
                             break;
                         case "div(":
@@ -190,6 +191,32 @@ public class Mike {
                                 z++;
                             }
                             variablesString.put(dats[0], dats[1]);
+                            break;
+                        case ">":
+                            String inf[] = new String[2];
+                            StringTokenizer fni = new StringTokenizer(LineaCode.get(i + 1), "=");
+                            int s = 0;
+                            while (fni.hasMoreTokens()) {
+                                inf[s] = fni.nextToken();
+                                s++;
+                            }
+                            variablesDouble.put(inf[0], Double.parseDouble(inf[1]));
+                            break;
+                        case "sumVarDouble(":
+                            double n=0.0;
+                            String varis[] = new String[LineaCode.get(i + 1).length()];
+                            StringTokenizer tk = new StringTokenizer(LineaCode.get(i + 1), "+");
+                            int q = 0;
+                            while (tk.hasMoreTokens()) {
+                                varis[q] = tk.nextToken();
+                                q++;
+                            }
+                            for (int j = 0; j < varis.length; j++) {
+                                if (variablesDouble.containsKey(varis[j])) {
+                                    n += variablesDouble.get(varis[j]);
+                                }
+                            }
+                            System.out.println(n);
                             break;
                     }
                 }
