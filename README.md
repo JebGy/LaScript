@@ -4,6 +4,10 @@ Lenguaje de Programación interpretado por Java.
 # ¿Cómo colaborar?
 Puedes colaborar ingresando al grupo de discord: https://discord.gg/y7bsqvdJtZ
 
+# ¿Cuál es el objetivo de LaScript?
+El objetivo principal es que sirma como herramienta para que las nuevas personas que se inicien en el mundo de la programación,
+comiencen con un lenguaje sencillo y facil de entender.
+
 # ¿Cómo ejecutar un archivo LaScript?
 
 1.- Abre la carpeta "out".
@@ -30,4 +34,4 @@ Puedes colaborar ingresando al grupo de discord: https://discord.gg/y7bsqvdJtZ
 
 # ¡Bonus!
 
-Para iniciar mas rápido, y no entrar en las carpetas, usted debe de tener el .bat y el LaScript.jar en un mismo lugar.
+Para iniciar más rápido, y no entrar en las carpetas, usted debe de tener el .bat y el LaScript.jar en un mismo lugar.
